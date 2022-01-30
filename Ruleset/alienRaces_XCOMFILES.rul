@@ -455,8 +455,8 @@
       - STR_HYBRID_SPECIALIST # 1
       - STR_HYBRID_SPECIALIST # 2
       - STR_HYBRID_SUPERVISOR # 3
-      - STR_HYBRID_AGENT # 4
-      - STR_HYBRID_SOLDIER # 5
+      - STR_HYBRID_SOLDIER # 4
+      - STR_HYBRID_WORKER # 5
       - STR_ALIEN_DRONE_TERRORIST # 6
       - STR_LARGE_ALIEN_DRONE_TERRORIST # 7
       - STR_HYBRID_ENVOY # 8
@@ -512,9 +512,9 @@
       - STR_BLACK_LOTUS_MANDARIN # 8
       - STR_BLACK_LOTUS_HOST # 9
       - STR_BLACK_LOTUS_MASHINOBI # 10
-      - STR_BLACK_LOTUS_MANDARIN # 11
+      - STR_BLACK_LOTUS_WAR_WITCH # 11
       - STR_BLACK_LOTUS_MANDARIN # 12
-    retaliationAggression: -100 # 13
+    retaliationAggression: -100
   - id: STR_ZSRR
     members:
       - STR_ZSRR_UBEK

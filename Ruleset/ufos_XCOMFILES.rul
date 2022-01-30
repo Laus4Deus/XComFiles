@@ -318,6 +318,8 @@ ufos:
               - [16, 17, 2]
               - [1, 1, 2]
               - [16, 1, 2]
+            STR_ELERIUM_115:
+              - [16, 1, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
@@ -333,6 +335,8 @@ ufos:
               - [17, 16, 2]
               - [1, 1, 2]
               - [1, 16, 2]
+            STR_ELERIUM_115:
+              - [1, 16, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
@@ -1078,6 +1082,8 @@ ufos:
           items:
             STR_SPAWN_ETHEREAL_LEGATE:
               - [7, 3, 0]
+            STR_ELERIUM_115:
+              - [2, 3, 0]
           fuseTimers:
             STR_SPAWN_ETHEREAL_LEGATE: [0, 0]
   - type: STR_TERROR_SHIP
@@ -1137,6 +1143,8 @@ ufos:
         - U_WALL02
         - U_PODS
         - U_BITS
+        - U_DISEC2
+        - U_OPER2
         - UFOL83
       mapBlocks:
         - name: TERROR00
@@ -1148,6 +1156,11 @@ ufos:
               - [2, 5, 1]
               - [25, 12, 1]
               - [25, 5, 1]
+            STR_ELERIUM_115:
+              - [14, 12, 0]
+              - [11, 9, 0]
+              - [14, 6, 0]
+              - [17, 9, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR01
@@ -1159,6 +1172,11 @@ ufos:
               - [12, 3, 1]
               - [5, 26, 1]
               - [12, 26, 1]
+            STR_ELERIUM_115:
+              - [6, 15, 0]
+              - [9, 12, 0]
+              - [9, 18, 0]
+              - [12, 15, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR02
@@ -1170,6 +1188,11 @@ ufos:
               - [2, 5, 1]
               - [25, 12, 1]
               - [25, 5, 1]
+            STR_ELERIUM_115:
+              - [3, 12, 0]
+              - [3, 6, 0]
+              - [25, 12, 0]
+              - [25, 6, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR03
@@ -1181,6 +1204,11 @@ ufos:
               - [12, 3, 1]
               - [5, 26, 1]
               - [12, 26, 1]
+            STR_ELERIUM_115:
+              - [6, 4, 0]
+              - [12, 4, 0]
+              - [6, 26, 0]
+              - [12, 26, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR04
@@ -1192,6 +1220,11 @@ ufos:
               - [2, 5, 1]
               - [25, 12, 1]
               - [25, 5, 1]
+            STR_ELERIUM_115:
+              - [12, 4, 0]
+              - [12, 7, 0]
+              - [16, 4, 0]
+              - [16, 7, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR05
@@ -1203,6 +1236,11 @@ ufos:
               - [12, 3, 1]
               - [5, 26, 1]
               - [12, 26, 1]
+            STR_ELERIUM_115:
+              - [4, 13, 0]
+              - [4, 17, 0]
+              - [7, 13, 0]
+              - [7, 17, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR06
@@ -1214,6 +1252,11 @@ ufos:
               - [2, 5, 1]
               - [25, 12, 1]
               - [25, 5, 1]
+            STR_ELERIUM_115:
+              - [3, 6, 0]
+              - [3, 12, 0]
+              - [25, 6, 0]
+              - [25, 12, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR07
@@ -1225,6 +1268,11 @@ ufos:
               - [12, 3, 1]
               - [5, 26, 1]
               - [12, 26, 1]
+            STR_ELERIUM_115:
+              - [6, 4, 0]
+              - [12, 4, 0]
+              - [6, 26, 0]
+              - [12, 26, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
   - type: STR_CRUISER
@@ -1304,6 +1352,10 @@ ufos:
               - [5, 19, 0]
               - [20, 9, 0]
               - [20, 19, 0]
+            STR_ELERIUM_115:
+              - [15, 14, 2]
+              - [24, 4, 0]
+              - [24, 24, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
@@ -2038,12 +2090,13 @@ ufos:
     sprite: 4
     damageMax: 500
     speedMax: 500
-    accel: 10
-    power: 40
-    range: 20
-    score: 70
-    reload: 32
-    breakOffTime: 500
+    accel: 1
+    power: 3
+    range: 10
+    reload: 18
+    score: 25
+    fireSound: 145
+    breakOffTime: 20
     battlescapeTerrainData:
       name: CONVOY00
       mapDataSets:
@@ -2064,15 +2117,25 @@ ufos:
           length: 50
   - type: STR_MEDIUM_GROUND_CONVOY
     size: STR_MEDIUM_UC
-    sprite: 4
-    damageMax: 500
-    speedMax: 500
-    accel: 10
-    power: 40
-    range: 20
-    score: 100
-    reload: 32
-    breakOffTime: 500
+    modSprite: InterceptionVanMediumConvoy
+    damageMax: 50
+    speedMax: 75
+    accel: 1
+    power: 3
+    range: 10
+    reload: 20
+    fireSound: 145
+    score: 40
+    breakOffTime: 20
+    raceBonus:
+      STR_BLACK_LOTUS:
+        craftCustomDeploy: STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS
+      STR_CHURCH_OF_DAGON:
+        craftCustomDeploy: STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON
+      STR_ZSRR:
+        craftCustomDeploy: STR_MEDIUM_GROUND_CONVOY_ZSRR
+      STR_EXALT:
+        craftCustomDeploy: STR_MEDIUM_GROUND_CONVOY_EXALT
     battlescapeTerrainData:
       name: CONVOY03
       mapDataSets:
@@ -2082,6 +2145,42 @@ ufos:
         - name: CONVOY03
           width: 50
           length: 20
+  - type: STR_MEDIUM_MILITARY_CONVOY
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionMediumMilitaryConvoy
+    damageMax: 200
+    speedMax: 100
+    accel: 1
+    armor: 1
+    power: 30
+    range: 15
+    reload: 50
+    fireSound: 146
+    score: 75
+    breakOffTime: 200
+    raceBonus:
+      STR_BLACK_LOTUS:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_BLACK_LOTUS
+        missionCustomDeploy: STR_BASE_DEFENSE_BLACK_LOTUS
+      STR_CHURCH_OF_DAGON:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_CHURCH_OF_DAGON
+        missionCustomDeploy: STR_BASE_DEFENSE_CHURCH_OF_DAGON
+      STR_ZSRR:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_ZSRR
+        missionCustomDeploy: STR_BASE_DEFENSE_ZSRR
+      STR_EXALT:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_EXALT
+        missionCustomDeploy: STR_BASE_DEFENSE_EXALT
+    battlescapeTerrainData:
+      name: MILITARY_CONVOY
+      mapDataSets:
+        - BLANKS
+        - XARMY
+        - ROADS
+      mapBlocks:
+        - name: MILITARY_CONVOY
+          width: 20
+          length: 50
   - type: STR_MANSION
     size: STR_LARGE
     sprite: 4
@@ -2092,7 +2191,7 @@ ufos:
     range: 20
     score: 700
     reload: 32
-    breakOffTime: 500
+    breakOffTime: 20
     battlescapeTerrainData:
       name: D_MANSN
       mapDataSets:
@@ -4937,6 +5036,37 @@ ufos:
               - [4, 3, 0]
               - [4, 3, 0]
               - [4, 4, 0]
+  - type: STR_SUV_VIP
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: PICKUP
+      mapDataSets:
+        - BLANKS
+        - XARMY_CIV
+      mapBlocks:
+        - name: PICKUP
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CIVILIAN_MALE_VIP:
+              - [6, 4, 0]
+            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD:
+              - [6, 5, 0]
+              - [2, 4, 0]
+              - [1, 7, 0]
+              - [8, 3, 0]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_VIP: [0, 0]
+            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD: [0, 0]
   - type: STR_OSIRON_WAREHOUSE
     size: STR_SMALL
     modSprite: interception_jammed

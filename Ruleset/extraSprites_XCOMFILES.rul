@@ -1324,7 +1324,7 @@
       1238: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerClip.png
       1239: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerFolded.png
       1240: Resources/FactionsPack/MenInBlack/bigob_MIB_PILOT.png
-      1241: Resources/FactionsPack/Hybrids/bigob_HYBRID_AGENT_CORPSE.png
+      1241: Resources/FactionsPack/Hybrids/bigob_HYBRID_SOLDIER_CORPSE.png
       1242: Resources/FactionsPack/Hybrids/bigob_HYBRID_SPECIALIST_CORPSE.png
       1243: Resources/FactionsPack/Hybrids/bigob_HYBRID_SUPERVISOR_CORPSE.png
       1244: Resources/Weapons_Compilation/XComWeapons/bigob_AdvancedGrenadeLauncher.png
@@ -1348,6 +1348,8 @@
       1262: Resources/Doge/bigob_DOGE_ASSAULT_GEAR_CORPSE.png
       1263: Resources/Doge/bigob_ENHANCED_DOGE_BITE.png
       1264: Resources/Doge/bigob_ENHANCED_DOGE_BARK.png
+      1265: Resources/Tanks_Compilation/TankWeapons/bigob_HeavyMassDriverClip.png
+      1266: Resources/FactionsPack/BlackLotus/bigob_BLACK_LOTUS_WAR_WITCH.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -2225,7 +2227,7 @@
       1047: Resources/Tanks_Compilation/DroneCarrier/floorob_XComMarkerCorpse.png
       1048: Resources/Tanks_Compilation/DroneCarrier/floorob_XComMarkerFolded.png
       1049: Resources/FactionsPack/MenInBlack/floorob_MIB_PILOT.png
-      1050: Resources/FactionsPack/Hybrids/floorob_HYBRID_AGENT_CORPSE.png
+      1050: Resources/FactionsPack/Hybrids/floorob_HYBRID_SOLDIER_CORPSE.png
       1051: Resources/FactionsPack/Hybrids/floorob_HYBRID_SPECIALIST_CORPSE.png
       1052: Resources/FactionsPack/Hybrids/floorob_HYBRID_SUPERVISOR_CORPSE.png
       1053: Resources/Weapons_Compilation/XComWeapons/floorob_AdvancedGrenadeLauncher.png
@@ -2248,6 +2250,7 @@
       1070: Resources/Weapons_Compilation/AlienWeapons/floorob_AlienLaserSMGClip.png
       1071: Resources/FactionsPack/Hybrids/floorob_HybridAssault.png
       1072: Resources/Doge/floorob_DOGE_ASSAULT_GEAR_CORPSE.png
+      1073: Resources/FactionsPack/BlackLotus/floorob_BLACK_LOTUS_WAR_WITCH.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -3534,17 +3537,17 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Hybrids/inventory_HYBRID.png
-  - type: HYBRID_AGENT.PCK
+  - type: HYBRID_SOLDIER.PCK
     subX: 32
     subY: 40
     width: 512
     height: 720
     files:
-      0: Resources/FactionsPack/Hybrids/HYBRID_AGENT.png
-  - type: inventory_HYBRID_AGENT
+      0: Resources/FactionsPack/Hybrids/HYBRID_SOLDIER.png
+  - type: inventory_HYBRID_SOLDIER
     singleImage: true
     files:
-      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_AGENT.png
+      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_SOLDIER.png
   - type: HYBRID_SPECIALIST.PCK
     subX: 32
     subY: 40
@@ -5157,6 +5160,23 @@
     height: 200
     files:
       0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_WITCH.png
+  - type: BLACK_LOTUS_WAR_WITCH.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_WAR_WITCH.png
+  - type: inventory_BLACK_LOTUS_WAR_WITCH
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_WAR_WITCH.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_WAR_WITCH
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_WAR_WITCH.png
   - type: BLACK_LOTUS_AVATAR.PCK
     subX: 32
     subY: 40
@@ -7885,6 +7905,18 @@
     height: 52
     files:
       0: Resources/Interwin/Craft_CultistCar.png
+  - type: InterceptionVanMediumConvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_VanMediumConvoy.png
+  - type: InterceptionMediumMilitaryConvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MediumMilitaryConvoy.png
   - type: interception_jammed
     singleImage: true
     width: 160

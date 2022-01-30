@@ -3012,7 +3012,7 @@
     costSell: 56000
     transferTime: 48
     weight: 10
-    bigSprite: 68
+    bigSprite: 1265
     floorSprite: 12
     hitSound: 66
     hitAnimation: 26
@@ -3021,7 +3021,7 @@
     clipSize: 60
     battleType: 2
     invWidth: 2
-    invHeight: 1
+    invHeight: 2
     listOrder: 11330
   - type: STR_TANK_GAUSS_RECOVER
     costSell: 15000
@@ -8190,7 +8190,6 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_LC_AA_AMMO
-      - STR_EXPLOSIVES_LICENCE
       - STR_LIGHT_CANNON_BUY
     size: 0.1
     costBuy: 12000
@@ -19183,7 +19182,7 @@
     attraction: 15
     listOrder: 34480
   - type: STR_ALIEN_LASER_SMG
-    categories: [STR_ALIEN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_SMGS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
       - STR_ALIEN_LASER_SMG
     size: 0.1
@@ -25594,6 +25593,20 @@
     battleType: 11
     armor: 30
     recover: false
+  - type: STR_CORPSE_ASSAULT_SUIT
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.5
+    weight: 35
+    bigSprite: 1119
+    floorSprite: 959
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 28
+    recover: true
+    costSell: 15000
+    listOrder: 62174
   - type: STR_STORMTROOPER_ARMOR_CORPSE
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
@@ -25727,18 +25740,6 @@
     battleType: 11
     armor: 50
     recover: true
-  - type: STR_CORPSE_ASSAULT_SUIT
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.5
-    weight: 35
-    bigSprite: 1119
-    floorSprite: 959
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 28
-    recover: false
   - type: STR_CORPSE_NIGHTOPS_ARMOR
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26601,6 +26602,30 @@
     prisonType: 1
     costSell: 30000
     listOrder: 150130
+  - type: STR_BLACK_LOTUS_WAR_WITCH_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 33
+    bigSprite: 1266
+    floorSprite: 1073
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 35
+    recover: true
+    recoverCorpse: false
+    recoveryPoints: 1
+  - type: STR_BLACK_LOTUS_WAR_WITCH
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 35000
+    listOrder: 150132
   - type: STR_BLACK_LOTUS_HOST_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -31239,7 +31264,7 @@
     prisonType: 1
     costSell: 80000
     listOrder: 150790
-  - type: STR_HYBRID_SOLDIER
+  - type: STR_HYBRID_WORKER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -31263,7 +31288,7 @@
     prisonType: 1
     costSell: 60000
     listOrder: 150820
-  - type: STR_HYBRID_AGENT
+  - type: STR_HYBRID_SOLDIER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -31308,7 +31333,7 @@
     battleType: 11
     armor: 26
     listOrder: 62790
-  - type: STR_HYBRID_AGENT_CORPSE
+  - type: STR_HYBRID_SOLDIER_CORPSE
     name: STR_HYBRID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
