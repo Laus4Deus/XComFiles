@@ -58,6 +58,11 @@
       - BLANKS
       - CAVEBONE
     mapBlocks: *ShoggLandingZone
+  - name: DAGON_TEMPLE_CAVE_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+    mapBlocks: &ShoggLandingZone
   - name: REPTOID_CAVE_SETTLEMENT_LANDING
     mapDataSets:
       - BLANKS
@@ -131,6 +136,76 @@
       - SHOGG_VILLAGE
       - SHOGG_VILLAGE_WALL02
     mapBlocks: *AlienBaseCavesTransition
+  - name: ACADEMY_TOWER
+    mapDataSets:
+      - BLANKS
+      - LOTUSBASE01
+      - LOTUSBASE02
+      - LOTUSBASE03
+      - LOTUSBASE04
+      - LOTUSBASE05
+    script: ACADEMY_TOWER
+    mapBlocks:
+      - name: ACADEMY_BASE00
+        width: 40
+        length: 40
+        height: 2
+        groups: 6
+      - name: ACADEMY_TOP00
+        width: 40
+        length: 40
+        height: 11
+        groups: 9
+      - name: ACADEMY_TOWER_A_00
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_01
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_02
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_03
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_04
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_B_00
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_01
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_02
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_03
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_04
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
   - name: CORP_PHASE_1
     mapDataSets:
       - BLANKS
@@ -620,6 +695,22 @@
             - [4, 4, 4]
         fuseTimers:
           STR_SPAWN_REPTOID_DRAGONFIRE_TURRET: [0, 0]
+  - name: DAGON_TEMPLE
+    mapDataSets:
+      - BLANKS
+      - DAGON_BASE
+      - DAGON_WALL02
+      - DAGON_PODS
+      - DAGON_EXTRA
+      - DAGON_BASE2
+      - DAGON_FRN
+      - DAGON_BITS
+      - DAGON_FLOOR
+      - OCEANTEMPLE1
+    mapBlocks:
+      - name: CAVE_TEMPLE
+        width: 20
+        length: 20
   - name: DARK_TOWER
     mapDataSets:
       - BLANKS

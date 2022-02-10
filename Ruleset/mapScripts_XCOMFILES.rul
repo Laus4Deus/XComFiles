@@ -2781,6 +2781,85 @@
       groups: 8
     - type: fillArea # only necessary for non-20x20 craft maps
       terrain: DESERT
+  - type: DAGON_TEMPLE_CAVE
+    commands:
+    - type: addBlock # Dagon temple
+      rects:
+        - [1, 1, 3, 3]
+      size: 2
+      terrain: DAGON_TEMPLE
+    - type: addBlock # 20x20 blocks in center of village
+      rects:
+        - [1, 1, 4, 4]
+      executionChances: 50
+      executions: 2
+      size: 2
+      groups: 0
+    - type: addBlock # 20x20 blocks in center of village
+      rects:
+        - [1, 1, 4, 4]
+      executionChances: 50
+      size: 2
+      groups: 0
+    - type: fillArea # fill in center of village
+      rects:
+        - [1, 1, 4, 4]
+      groups: 0
+      #terrain: CULTA
+    - type: addBlock # north center
+      rects:
+        - [2, 0 , 2, 1]
+      size: [2, 1, 4]
+      groups: 1
+    - type: fillArea # north center
+      rects:
+        - [1, 0, 4, 1]
+      groups: 1
+    - type: addBlock # east center
+      rects:
+        - [5, 2 , 1, 2]
+      size: [1, 2, 4]
+      groups: 2
+    - type: fillArea # east center
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+    - type: addBlock # south center
+      rects:
+        - [2, 5, 2, 1]
+      size: [2, 1, 4]
+      groups: 10
+    - type: fillArea # south center
+      rects:
+        - [1, 5, 4, 1]
+      groups: 3
+    - type: addBlock # west center
+      rects:
+        - [0, 2 , 1, 2]
+      size: [1, 2, 4]
+      groups: 4
+    - type: fillArea # west center
+      rects:
+        - [0, 1, 1, 4]
+      groups: 4
+    - type: fillArea # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 5
+    - type: fillArea # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 6
+    - type: fillArea # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 7
+    - type: fillArea # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 8
+    - type: fillArea # only necessary for non-20x20 craft maps
+      terrain: DESERT
   - type: ASYLUM
     commands:
     - type: addBlock # north east
@@ -2907,6 +2986,94 @@
       terrain: MANSION_FENCE
     - type: addUFO
       UFOName: STR_CULT_MANOR
+    - type: addBlock
+      size: 2
+      groups: 6
+    - type: addBlock
+      size: 2
+      groups: 7
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: ACADEMY_TOWER
+    commands:
+    - type: addBlock # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 7
+      terrain: MANSION_FENCE
+    - type: addBlock # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 8
+      terrain: MANSION_FENCE
+    - type: addBlock # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 5
+      terrain: MANSION_FENCE
+    - type: addBlock # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 6
+      terrain: MANSION_FENCE
+    - type: addBlock # north
+      rects:
+        - [1, 0, 4, 1]
+      groups: 3
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # west
+      rects:
+        - [0, 1, 1, 4]
+      groups: 1
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # east
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south gate
+      rects:
+        - [2, 5, 1, 1]
+      groups: 9
+      terrain: MANSION_FENCE
+    - type: addBlock # south 1
+      rects:
+        - [1, 5, 1, 1]
+      groups: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south 2
+      rects:
+        - [3, 5, 2, 1]
+      groups: 4
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addBlock
+      size: [4, 4, 19]
+      terrain: ACADEMY_TOWER
+      verticalLevels:
+       - type: ground
+         groups: 6
+         size: [4, 4, 2]
+       - type: middle
+         groups: 7
+         size: [4, 4, 1]
+       - type: middle
+         groups: 8
+         size: [4, 4, 1]
+       - type: middle
+         groups: 7
+         size: [4, 4, 1]
+       - type: middle
+         groups: 8
+         size: [4, 4, 1]
+       - type: ceiling
+         groups: 9
+         size: [4, 4, 11]
     - type: addBlock
       size: 2
       groups: 6

@@ -1049,7 +1049,70 @@
     prisonType: 4
     recover: true
     costSell: 90000
-    listOrder: 144600
+    listOrder: 144620
+  - type: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    categories: [STR_ALIEN_TECH, STR_WRECKS]
+    size: 1
+    costSell: 50000
+    battleType: 11
+    listOrder: 75520
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_1
+    name: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    floorSprite: 801
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_2
+    recover: false
+    floorSprite: 1082
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_3
+    recover: false
+    floorSprite: 1083
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_4
+    recover: false
+    floorSprite: 1084
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: STR_BLACK_LOTUS_STORMCLOUD
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
+    size: 20
+    liveAlien: true
+    prisonType: 4
+    recover: true
+    costSell: 150000
+    listOrder: 144610
+  - type: STR_BLACK_LOTUS_STORMCLOUD_CANNON
+    categories: [STR_BUILT_INS]
+    weight: 35
+    bigSprite: 54
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 87
+    hitSound: 89
+    hitAnimation: 46
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    accuracySnap: 40
+    accuracyAimed: 90
+    tuSnap: 27
+    tuAimed: 70
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    turretType: 0
+    recover: false
   - type: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     categories: [STR_SHOGG_TECH, STR_WRECKS]
     size: 25
@@ -1622,6 +1685,7 @@
     listOrder: 10920
   - type: STR_SCOUT_DRONE_ROCKET_LAUNCHER # Weapon for STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR (rocket drone)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
+    weight: 0
     size: 6
     bigSprite: 1096
     bulletSprite: 0
@@ -4713,6 +4777,48 @@
     experienceTrainingMode: 13
     attraction: 20
     listOrder: 18100
+  - type: STR_FORCEBLADE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requires:
+      - STR_FORCEBLADE
+    size: 0.3
+    costSell: 36500
+    weight: 9
+    bigSprite: 1273
+    floorSprite: 1078
+    handSprite: 2296
+    meleeHitSound: 274
+    meleeAnimation: 8
+    power: 10
+    damageType: 7
+    damageBonus:
+      melee: 0.3
+      psiStrength: 0.3
+      rank: 2.0
+    damageAlter:
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.07
+      ToTile: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.75
+      psiSkill: 0.25
+    costMelee:
+      time: 10
+      energy: 6
+    costThrow:
+      energy: 18
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 50
+    experienceTrainingMode: 13
+    psiRequired: true
+    attraction: 20
+    listOrder: 18370
   - type: STR_WAKIZASHI
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -7914,6 +8020,8 @@
     power: 28
     damageBonus:
       firing: 0.1
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 20
     battleType: 2
@@ -8055,7 +8163,7 @@
     hitSound: 77
     power: 30
     damageAlter:
-      ArmorEffectiveness: 0.85
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 20
     battleType: 2
@@ -9273,6 +9381,8 @@
     hitSound: 220
     hitAnimation: 26
     power: 55
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 80
     battleType: 2
@@ -9291,6 +9401,8 @@
     hitSound: 220
     hitAnimation: 26
     power: 70
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 80
     battleType: 2
@@ -10933,6 +11045,180 @@
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_STAR_PISTOL
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL
+    size: 0.1
+    costSell: 47000
+    weight: 7
+    bigSprite: 1271
+    floorSprite: 1077
+    handSprite: 2288
+    bulletSprite: 8
+    fireSound: 86
+    compatibleAmmo:
+      - STR_STAR_PISTOL_CLIP
+    accuracyCloseQuarters: 120
+    accuracySnap: 70
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 23
+    tuLoad: 15
+    dropoff: 3
+    kneelBonus: 105
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 1
+    armor: 35
+    attraction: 15
+    listOrder: 20580
+  - type: STR_STAR_PISTOL_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL_CLIP
+    size: 0.1
+    costSell: 1800
+    weight: 3
+    bigSprite: 1272
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.35
+      rank: 1.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 10
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 15
+    psiRequired: true
+    listOrder: 20581
+  - type: STR_STAR_MUSKET
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET
+    size: 0.2
+    costSell: 62000
+    weight: 17
+    bigSprite: 1269
+    floorSprite: 1076
+    handSprite: 2280
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_MUSKET_CLIP
+    accuracyCloseQuarters: 70
+    accuracySnap: 95
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 26
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: 21840
+  - type: STR_STAR_MUSKET_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET_CLIP
+    size: 0.3
+    costSell: 2250
+    weight: 3
+    bigSprite: 1270
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.5
+      rank: 2.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 15
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: 21841
+  - type: STR_STAR_CANNON
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON
+    size: 0.2
+    costSell: 85000
+    weight: 21
+    bigSprite: 1267
+    floorSprite: 1074
+    handSprite: 2272
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_CANNON_CLIP
+    accuracyCloseQuarters: 60
+    accuracySnap: 77
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 30
+    snapRange: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: 30110
+  - type: STR_STAR_CANNON_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON_CLIP
+    size: 0.3
+    costSell: 3000
+    weight: 3
+    bigSprite: 1268
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.6
+      rank: 3.0
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 20
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: 30111
   - type: STR_STORM_ROSE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_ELECTRIC, STR_SPACE, STR_DREAM, STR_LAND]
     size: 0.1
@@ -13557,6 +13843,8 @@
     power: 30
     damageBonus:
       firing: 0.15
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 5
     costThrow:
@@ -13611,6 +13899,7 @@
     power: 29
     damageAlter:
       RandomType: 7
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -13665,6 +13954,7 @@
       firing: 0.2
     damageAlter:
       RandomType: 7
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -14543,6 +14833,8 @@
     damageType: 1
     damageBonus:
       reactions: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.8
     clipSize: 15
     costThrow:
       energy: 6
@@ -14596,6 +14888,8 @@
     damageType: 1
     damageBonus:
       reactions: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.8
     clipSize: 32
     costThrow:
       energy: 6
@@ -14775,6 +15069,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -14825,7 +15121,7 @@
     hitAnimation: 26
     power: 26
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -14896,6 +15192,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -17491,7 +17789,7 @@
     hitAnimation: 26
     power: 26
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 30
     costThrow:
@@ -17580,7 +17878,7 @@
     power: 26
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     clipSize: 100
     battleType: 2
     armor: 30
@@ -17767,6 +18065,8 @@
     hitAnimation: 26
     damageType: 1
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     clipSize: 50
     costThrow:
       energy: 8
@@ -17787,6 +18087,8 @@
     hitAnimation: 26
     damageType: 1
     power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.9
     clipSize: 50
     costThrow:
       energy: 8
@@ -18888,6 +19190,8 @@
     hitSound: 22
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 12
     shotgunSpread: 20
@@ -18909,6 +19213,8 @@
     hitSound: 22
     hitAnimation: 26
     power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 12
     shotgunSpread: 20
@@ -20082,6 +20388,8 @@
       energy: 10
     hitAnimation: 26
     power: 48
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageBonus:
       firing: 0.1
     damageType: 1
@@ -20209,6 +20517,8 @@
     power: 43
     damageBonus:
       firing: 0.1
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 60
     battleType: 2
@@ -21361,6 +21671,64 @@
     armor: 2
     attraction: 15
     listOrder: 46110
+  - type: STR_REPAIR_KIT
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    size: 0.2
+    costBuy: 50000
+    costSell: 35000
+    weight: 15
+    bigSprite: 1274
+    floorSprite: 1079
+    handSprite: 2304
+    fireSound: 64
+    compatibleAmmo:
+      - STR_REPAIR_KIT_CLIP
+    battleType: 1
+    accuracyCloseQuarters: 10
+    accuracyAimed: 80
+    tuAimed: 66
+    maxRange: 1
+    invWidth: 2
+    invHeight: 2
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 1
+    attraction: 5
+    listOrder: 48400
+  - type: STR_REPAIR_KIT_CLIP
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    power: 30
+    size: 0.1
+    costBuy: 5000
+    costSell: 3500
+    weight: 5
+    bigSprite: 1275
+    floorSprite: 1080
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      FireThreshold: 25.0
+      RandomType: 7
+      ToTile: 1.0
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    hitSound: 0
+    hitAnimation: 0
+    blastRadius: 0
+    armor: 20
+    attraction: 5
+    listOrder: 48401
+    tags:
+      ITEM_REPAIR_KIT: 1
+      ITEM_REPAIR_KIT_POWER: 10
   - type: STR_MOTION_SCANNER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1

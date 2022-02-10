@@ -802,7 +802,7 @@ ufopaedia:
       x: 5
       y: 130
       width: 110
-      height: 56
+      height: 65
     text: STR_MUDRANGER_UFOPEDIA
     listOrder: 7310
   - id: STR_IMPROVED_MUDRANGER
@@ -7342,7 +7342,7 @@ ufopaedia:
       - STR_SUPERLASKA_CORPSE
     image_id: UFOPEDIA_IMG_SUPERLASKA_AUTOPSY
     text: STR_SUPERLASKA_AUTOPSY_UFOPEDIA
-    text_width: 158
+    text_width: 152
     listOrder: 164710
   - id: STR_ALIEN_DRONE
     type_id: 7
@@ -12742,6 +12742,48 @@ ufopaedia:
     requires:
       - STR_FLAME_GLOVE
     listOrder: 44100
+  - id: STR_STAR_PISTOL
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_PISTOL
+    text: STR_STAR_PISTOL_UFOPEDIA
+    listOrder: 20580
+  - id: STR_STAR_PISTOL_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_PISTOL_CLIP
+    text: STR_STAR_PISTOL_CLIP_UFOPEDIA
+    listOrder: 20581
+  - id: STR_STAR_MUSKET
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_MUSKET
+    text: STR_STAR_MUSKET_UFOPEDIA
+    listOrder: 21840
+  - id: STR_STAR_MUSKET_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_MUSKET_CLIP
+    text: STR_STAR_MUSKET_CLIP_UFOPEDIA
+    listOrder: 21841
+  - id: STR_STAR_CANNON
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_CANNON
+    text: STR_STAR_CANNON_UFOPEDIA
+    listOrder: 30110
+  - id: STR_STAR_CANNON_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_STAR_CANNON_CLIP
+    text: STR_STAR_CANNON_CLIP_UFOPEDIA
+    listOrder: 30111
   - id: STR_STAFF_OF_HEART_GRIP_USE
     type_id: 8
     section: STR_ALIEN_ARTIFACTS
@@ -12870,6 +12912,18 @@ ufopaedia:
     requires:
       - STR_ZEPHYR_SERUM
     listOrder: 48005
+  - id: STR_REPAIR_KIT
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_REPAIR_KIT_UFOPEDIA
+    requires:
+      - STR_REPAIR_KIT
+    listOrder: 48400
+  - id: STR_REPAIR_KIT_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_REPAIR_KIT
   - id: STR_ELECTRO_FLARE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -13331,6 +13385,13 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_WAKIZASHI_UFOPEDIA
     listOrder: 18340
+  - id: STR_FORCEBLADE
+    requires:
+      - STR_FORCEBLADE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_FORCEBLADE_UFOPEDIA
+    listOrder: 18370
   - id: STR_RUSTY_BLADE
     requires:
       - STR_RUSTY_BLADE
@@ -14956,13 +15017,13 @@ ufopaedia:
     text_width: 150
     requires:
       - STR_SYNDICATE_WALKER
-    listOrder: 144600
+    listOrder: 144620
   - id: STR_SYNDICATE_WALKER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_SYNDICATE_WALKER_ARMOR
-    listOrder: 144601
+    listOrder: 144621
   - id: STR_SHADOW_OVER_UAC
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -15537,6 +15598,37 @@ ufopaedia:
     requires:
       - STR_BLACK_LOTUS_HOST_ARMOR
     listOrder: 150139
+  - id: STR_BLACK_LOTUS_STORMCLOUD
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD
+    text: STR_BLACK_LOTUS_STORMCLOUD_UFOPEDIA
+    text_width: 150
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD
+    listOrder: 144610
+  - id: STR_BLACK_LOTUS_STORMCLOUD_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD_ARMOR
+    listOrder: 144611
+  - id: STR_BLACK_LOTUS_STORMCLOUD_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    image_id: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD_AUTOPSY
+    text: STR_BLACK_LOTUS_STORMCLOUD_AUTOPSY_UFOPEDIA
+    text_width: 150
+    listOrder: 144613
+  - id: STR_BLACK_LOTUS_STORMCLOUD_CANNON
+    type_id: 4
+    section: STR_ALIEN_LIFE_FORMS
+#    text: STR_OBLITERATOR_WEAPON_UFOPEDIA
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD
+    listOrder: 144612
   - id: STR_SUPPORTER_OF_DAGON
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -16222,7 +16314,7 @@ ufopaedia:
     image_id: UFOPEDIA_IMG_BIODRONE_AUTOPSY
     text: STR_BIODRONE_AUTOPSY_UFOPEDIA
     text_width: 151
-    listOrder: 163607
+    listOrder: 163608
   - id: STR_BIODRONE_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -16236,6 +16328,13 @@ ufopaedia:
     requires:
       - STR_BIODRONE
     listOrder: 163606
+  - id: STR_BIODRONE_MELEE_ATTACK
+    type_id: 4
+    section: STR_ALIEN_LIFE_FORMS
+#    text: STR_BIODRONE_MELEE_ATTACK_UFOPEDIA
+    requires:
+      - STR_BIODRONE
+    listOrder: 163607
   - id: STR_GILLMAN_HERO
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS

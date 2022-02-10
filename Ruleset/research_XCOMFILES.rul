@@ -1170,7 +1170,7 @@ research:
     points: 0
     dependencies:
       - STR_BLACK_LOTUS_WITCH
-  - name: STR_BLACK_LOTUS_WITCH_WAR_ARMOR
+  - name: STR_BLACK_LOTUS_WAR_WITCH_ARMOR
     cost: 0
     points: 0
     dependencies:
@@ -1190,6 +1190,11 @@ research:
     points: 0
     dependencies:
       - STR_LO_WO
+  - name: STR_BLACK_LOTUS_STORMCLOUD_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_STORMCLOUD
   - name: STR_ZSRR_GANGER_ARMOR
     cost: 0
     points: 0
@@ -9423,6 +9428,12 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 34440
+  - name: STR_REPAIR_KIT
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_SCOUT_DRONE
+    listOrder: 48400
   - name: STR_MEDI_KIT
     requiresBaseFunc: [BIOLAB]
     cost: 210
@@ -20044,7 +20055,6 @@ research:
       - STR_STAFF_009
       - STR_STAFF_010
       - STR_STAFF_012
-      - STR_STAFF_018
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_024
@@ -20053,6 +20063,8 @@ research:
     getOneFreeProtected:
       STR_MILESTONE_2:
         - STR_STAFF_037
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
     listOrder: 153470
   - name: STR_UAC_SPACE_MARINE
     requiresBaseFunc: [INTLAB]
@@ -20076,7 +20088,6 @@ research:
       - STR_STAFF_009
       - STR_STAFF_010
       - STR_STAFF_012
-      - STR_STAFF_018
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_024
@@ -20085,6 +20096,8 @@ research:
     getOneFreeProtected:
       STR_MILESTONE_2:
         - STR_STAFF_037
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
     listOrder: 153500
   - name: STR_UAC_ENGINEER
     requiresBaseFunc: [INTLAB]
@@ -20109,7 +20122,6 @@ research:
         - STR_STAFF_009
         - STR_STAFF_010
         - STR_STAFF_015
-        - STR_STAFF_018
         - STR_STAFF_019
         - STR_STAFF_023
         - STR_STAFF_024
@@ -23069,8 +23081,8 @@ research:
         - STR_STAFF_022
       STR_HARVESTER:
         - STR_STAFF_027
-      STR_CHIEF_ENGINEER_CONTACT:
-      - STR_STAFF_018
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
       STR_MILITARY_ENVOY_CONTACT:
       - STR_STAFF_013
       - STR_STAFF_014
@@ -23620,6 +23632,60 @@ research:
       - STR_METAPSYCHOLOGY
       - STR_FLAME_GLOVE
     listOrder: 44110
+  - name: STR_STAR_CANNON
+    cost: 450
+    points: 25
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 30110
+  - name: STR_STAR_CANNON_CLIP
+    points: 300
+    points: 15
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 30111
+  - name: STR_STAR_MUSKET
+    cost: 400
+    points: 25
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 21840
+  - name: STR_STAR_MUSKET_CLIP
+    points: 275
+    points: 15
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 21841
+  - name: STR_STAR_PISTOL
+    cost: 325
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 20580
+  - name: STR_STAR_PISTOL_CLIP
+    points: 225
+    points: 10
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_FLAME_GLOVE_USE
+    listOrder: 20581
   - name: STR_DAGON_STAFF
     cost: 100
     points: 40
@@ -24045,6 +24111,15 @@ research:
     points: 10
     needItem: true
     listOrder: 18340
+  - name: STR_FORCEBLADE
+    cost: 250
+    points: 10
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_WAKIZASHI
+      - STR_METAPSYCHOLOGY
+    listOrder: 18370
   - name: STR_SABRE
     cost: 10
     points: 5
@@ -24619,7 +24694,7 @@ research:
     points: 20
     needItem: true
     destroyItem: true
-    listOrder: 144600
+    listOrder: 144620
   - name: STR_SYNDICATE_WALKER_CORPSE
     cost: 160
     points: 50
@@ -24630,6 +24705,27 @@ research:
       - STR_ADVANCED_AI_PREQ
     listOrder: 75600
   - name: STR_SYNDICATE_WALKER_AUTOPSY
+    cost: 0
+    points: 10
+    needItem: true
+  - name: STR_SYNDICATE_WALKER_AUTOPSY
+    cost: 0
+    points: 10
+    needItem: true
+  - name: STR_BLACK_LOTUS_STORMCLOUD
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 144610
+  - name: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    cost: 160
+    points: 50
+    lookup: STR_BLACK_LOTUS_STORMCLOUD_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: 75520
+  - name: STR_BLACK_LOTUS_STORMCLOUD_AUTOPSY
     cost: 0
     points: 10
     needItem: true

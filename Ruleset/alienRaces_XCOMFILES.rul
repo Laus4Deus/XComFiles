@@ -497,7 +497,7 @@
       - STR_JARHEAD_PRETENDER # 9
       - STR_JARHEAD_TERRORIST # 10
       - STR_DEEP_ONE_SOLDIER # 11
-      - STR_JANISSARY_TERRORIST
+      - STR_BIODRONE_TERRORIST # 12
     retaliationAggression: -100
   - id: STR_BLACK_LOTUS
     members:
@@ -513,7 +513,7 @@
       - STR_BLACK_LOTUS_HOST # 9
       - STR_BLACK_LOTUS_MASHINOBI # 10
       - STR_BLACK_LOTUS_WAR_WITCH # 11
-      - STR_BLACK_LOTUS_MANDARIN # 12
+      - STR_BLACK_LOTUS_STORMCLOUD # 12
     retaliationAggression: -100
   - id: STR_ZSRR
     members:
@@ -595,19 +595,19 @@
     retaliationAggression: -100
   - id: STR_OSIRON
     members:
-      - STR_HUMAN_OSIRON_FIXER
-      - STR_HUMAN_OSIRON_BOSS
-      - STR_HUMAN_OSIRON_ELITE
-      - STR_HUMAN_OSIRON_ELITE
-      - STR_HUMAN_OSIRON_GOON
-      - STR_HUMAN_OSIRON_GOON
-      - STR_DOGE
-      - STR_DOGE
-      - STR_HUMAN_OSIRON_GOON
-      - STR_HUMAN_OSIRON_GOON
-      - STR_DOGE
-      - STR_BLOODHOUND_TERRORIST
-      - STR_BLOODHOUND_TERRORIST
+      - STR_HUMAN_OSIRON_FIXER # 0
+      - STR_HUMAN_OSIRON_BOSS # 1
+      - STR_HUMAN_OSIRON_ELITE # 2
+      - STR_HUMAN_OSIRON_ELITE # 3
+      - STR_HUMAN_OSIRON_GOON # 4
+      - STR_HUMAN_OSIRON_GOON # 5
+      - STR_DOGE # 6
+      - STR_DOGE # 7
+      - STR_HUMAN_OSIRON_GOON # 8
+      - STR_HUMAN_OSIRON_GOON # 9
+      - STR_BLOODHOUND_TERRORIST # 10
+      - STR_BLACK_LOTUS_WAR_WITCH # 11
+      - STR_BLACK_LOTUS_STORMCLOUD # 12
     retaliationAggression: -100
   - id: STR_CULT_OF_SPIRITS
     members:

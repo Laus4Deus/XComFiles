@@ -1350,6 +1350,15 @@
       1264: Resources/Doge/bigob_ENHANCED_DOGE_BARK.png
       1265: Resources/Tanks_Compilation/TankWeapons/bigob_HeavyMassDriverClip.png
       1266: Resources/FactionsPack/BlackLotus/bigob_BLACK_LOTUS_WAR_WITCH.png
+      1267: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarCannon.png
+      1268: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarCannonClip.png
+      1269: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarMusket.png
+      1270: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarMusketClip.png
+      1271: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarPistol.png
+      1272: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarPistolClip.png
+      1273: Resources/Weapons_Compilation/CultPsiWeapons/bigob_Forceblade.png
+      1274: Resources/Medicals/bigob_RepairKit.png
+      1275: Resources/Medicals/bigob_RepairKitClip.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -2251,6 +2260,17 @@
       1071: Resources/FactionsPack/Hybrids/floorob_HybridAssault.png
       1072: Resources/Doge/floorob_DOGE_ASSAULT_GEAR_CORPSE.png
       1073: Resources/FactionsPack/BlackLotus/floorob_BLACK_LOTUS_WAR_WITCH.png
+      1074: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarCannon.png
+      1075: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarCannonClip.png
+      1076: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarMusket.png
+      1077: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarPistol.png
+      1078: Resources/Weapons_Compilation/CultPsiWeapons/floorob_Forceblade.png
+      1079: Resources/Medicals/floorob_RepairKit.png
+      1080: Resources/Medicals/floorob_RepairKitClip.png
+#
+      1082: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD2.png
+      1083: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD3.png
+      1084: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD4.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -2525,6 +2545,11 @@
       2248: Resources/Weapons_Compilation/XComWeapons/handob_HoloGrenade.png
       2256: Resources/Weapons_Compilation/AlienWeapons/handob_AlienLaserSMG.png
       2264: Resources/Weapons_Compilation/AlienWeapons/handob_AlienLaserSMGClip.png
+      2272: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarCannon.png
+      2280: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarMusket.png
+      2288: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarPistol.png
+      2296: Resources/Weapons_Compilation/CultPsiWeapons/handob_Forceblade.png
+      2304: Resources/Medicals/handob_RepairKit.png
   - type: INTICON.PCK
     files:
       13: Resources/Vessels/Inticon/AvengerDogfight.png
@@ -7851,6 +7876,24 @@
     height: 52
     files:
       0: Resources/Interwin/USO_Cruiser.png
+  - type: InterceptionHybridAircar
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_HybridAircar.png
+  - type: InterceptionHybridLander
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_HybridLander.png
+  - type: InterceptionAngelFighter
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_AngelFighter.png
   - type: InterceptionMirage
     singleImage: true
     width: 160
@@ -9709,6 +9752,29 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Syndicate/inventory_SYNDICATE_WALKER.png
+  - type: BLACK_LOTUS_TANKS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1480
+    files:
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_TANKS.png
+  - type: inventory_BLACK_LOTUS_STORMCLOUD
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_STORMCLOUD.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_STORMCLOUD.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_STORMCLOUD_AUTOPSY.png
   - type: MIBSECT.PCK
     width: 256
     height: 840
